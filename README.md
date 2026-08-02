@@ -7,7 +7,7 @@ Most PMs write a spec and wait for engineering.
 I open Claude Code and build the thing myself.
 
 $ ls ./proof/
-resolved/  how-i-build/  track-record/
+resolved/  fineprint/  how-i-build/  track-record/
 $ 
 ```
 
@@ -41,6 +41,27 @@ Drop in a photo, screenshot, or forwarded email of a bad order. Resolved extract
 </td>
 <td width="38%">
 <img src="https://raw.githubusercontent.com/arthivinod/Resolved/main/design-exports/Hackathon/screenshots/home-after-dark.png" width="320" alt="Resolved app, home screen">
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="62%" valign="top">
+
+### [FinePrint](https://github.com/arthivinod/FinePrint)
+
+**One side of this lease has read a hundred others. Now you have too.**
+
+Paste a lease clause, or ask in plain English — "can my landlord keep my deposit for a small wall stain?" FinePrint embeds the question, retrieves the matching provisions from the Model Tenancy Act and Karnataka rental law, and only then writes an answer — grounded in exactly what it found, citing it back to you, flagged fine / worth-questioning / red-flag. Retrieval is real and visible on screen, not a black box: the knowledge-base entries that actually matched light up live as they're found.
+
+`React 18` · `Vite` · `Voyage AI embeddings (RAG)` · `Gemini API`
+
+→ [github.com/arthivinod/FinePrint](https://github.com/arthivinod/FinePrint)
+
+</td>
+<td width="38%">
+<img src="https://raw.githubusercontent.com/arthivinod/FinePrint/main/screenshots/results.png" width="320" alt="FinePrint app, results screen showing a red-flag citation">
 </td>
 </tr>
 </table>
