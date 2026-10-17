@@ -7,16 +7,18 @@ Most PMs write a spec and wait for engineering.
 I open Claude Code and build the thing myself.
 
 $ ls ./proof/
-resolved/  fineprint/  how-i-build/  track-record/
+resolved/  eval-career-coach/  how-i-build/  track-record/
 $ 
 ```
 
-## Product manager who ships working software, not just specs.
+## AI Product Manager who ships working software — and tests whether it's telling the truth.
 <sub>Product Manager @ Employ Inc — AI-powered SaaS, $56M ARR portfolio</sub>
 
 Engineering background. Product instincts. I use Claude and Claude Code to go from "what if" to a working, demoable prototype — without waiting on an engineering team to validate the idea first. Some people call this vibe coding. I call it skipping the part where someone else builds the prototype to find out if the idea works.
 
-**Latest proof:** [**Resolved**](https://github.com/arthivinod/Resolved) — an AI agent that fights back against companies using AI to deny customer complaints at scale. Real Claude API calls, live repo, no slides required. ↓
+The build is half of it. The other half is knowing when an AI feature is confidently wrong — so I design evals for that too, not just features.
+
+**Latest proof:** [**Resolved**](https://github.com/arthivinod/Resolved) — an AI agent that fights back against companies using AI to deny customer complaints at scale. Real Claude API calls, live repo, no slides required. Most recently: a [**hallucination eval**](https://arthivinod.github.io/myWebsite/case-study-eval-career-coach.html) on an AI career coach — the test-design-and-measurement side of AI PM work, not just the build side. ↓
 
 ---
 
@@ -47,24 +49,23 @@ Drop in a photo, screenshot, or forwarded email of a bad order. Resolved extract
 
 <table>
 <tr>
-<td width="62%" valign="top">
+<td valign="top">
 
-### [FinePrint](https://github.com/arthivinod/FinePrint)
+### [Career Coach Hallucination Eval](https://arthivinod.github.io/myWebsite/case-study-eval-career-coach.html)
 
-**One side of this lease has read a hundred others. Now you have too.**
+**I didn't just build an AI feature. I measured whether it lies.**
 
-Paste a lease clause, or ask in plain English — "can my landlord keep my deposit for a small wall stain?" FinePrint embeds the question, retrieves the matching provisions from the Model Tenancy Act and Karnataka rental law, and only then writes an answer — grounded in exactly what it found, citing it back to you, flagged fine / worth-questioning / red-flag. Retrieval is real and visible on screen, not a black box: the knowledge-base entries that actually matched light up live as they're found.
+30 test cases across six failure modes — company facts, salary stats, ambiguous questions, adversarial false premises, out-of-scope visa/legal questions, and controls — scored against two system prompts of the *same* model, so the only variable was prompt design. Pass rate: 30% → 98%, from removing one hallucination-inducing instruction ("avoid being wishy-washy"). On the riskiest category — visa/legal questions — it went from 0% to 100%. Every ground-truth fact was checked against real sources (USCIS, Glassdoor, levels.fyi), not invented, and the write-up states plainly where the method's limits are.
 
-`React 18` · `Vite` · `Voyage AI embeddings (RAG)` · `Gemini API`
+`Claude` · `Eval design` · `Prompt engineering` · `Grounded fact-checking`
 
-→ [github.com/arthivinod/FinePrint](https://github.com/arthivinod/FinePrint)
+→ [Explore the live, filterable eval](https://arthivinod.github.io/eval-career-coach/) · [github.com/arthivinod/eval-career-coach](https://github.com/arthivinod/eval-career-coach) · [Read the write-up](https://arthivinod.github.io/myWebsite/case-study-eval-career-coach.html)
 
-</td>
-<td width="38%">
-<img src="https://raw.githubusercontent.com/arthivinod/FinePrint/main/screenshots/results.png" width="320" alt="FinePrint app, results screen showing a red-flag citation">
 </td>
 </tr>
 </table>
+
+Also shipped: [**FinePrint**](https://github.com/arthivinod/FinePrint) — a RAG tool that reads Indian tenancy law and flags risky lease clauses, with real citations instead of guesses.
 
 ---
 
