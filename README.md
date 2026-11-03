@@ -34,7 +34,7 @@ React prototype (v1) · PRD and 12 clickable screens (v2) · [case study](https:
 
 </td>
 <td width="38%">
-<img src="https://raw.githubusercontent.com/arthivinod/Resolved/main/design-exports/Hackathon/screenshots/home-after-dark.png" width="300" alt="Resolved v1 prototype, home screen">
+<img src="https://raw.githubusercontent.com/arthivinod/Resolved/main/docs/screenshots/v2-tvoptions.png" width="260" alt="Resolved v2: authorized service vs local repair">
 </td>
 </tr>
 </table>
