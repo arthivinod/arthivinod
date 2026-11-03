@@ -30,7 +30,7 @@ The part of AI product work I care most about is the judgment around the model: 
 
 Started as an agent that fights customer-support bots on your behalf. Building it showed me the business didn't hold up: consumers don't pay to complain, any chatbot can write the letter, and no company would ever partner with it. So I pivoted it into an after-sales bridge that gets a broken washer or TV to the brand's authorized service with a complete request, and gives brands structured tickets and early defect signals in return. AI is used only where typing is genuinely worse, like reading a model sticker.
 
-React prototype (v1) · PRD and 12 clickable screens (v2) · [case study](https://arthivinod.github.io/myWebsite/case-study-resolved.html)
+[Live v2 prototype](https://arthivinod.github.io/Resolved/prototype/screens.html) · React prototype (v1) · [case study](https://arthivinod.github.io/myWebsite/case-study-resolved.html)
 
 </td>
 <td width="38%">
